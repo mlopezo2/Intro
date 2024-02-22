@@ -31,3 +31,15 @@ with col2:
     st.write("La vista es fundamental para tu interfaz")
   if modo == "Auditiva":
     st.write("La audición es fundamental para tu interfaz")
+
+st.subheader("Uso de Botones")
+if st.button("Presiona el Botón"):
+  st.write("Gracias por presionar")
+else:
+  st.write("No has presionado aún")
+
+st.subheader("Selectbox")
+in_mod = st.selectbox(
+  "Selecciona la modalidad",
+  ("Audio", "Visual", "Háptico"),
+  
