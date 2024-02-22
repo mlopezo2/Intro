@@ -22,4 +22,12 @@ with col1:
   resp = st.checkbox("Grogu")
   if resp:
     st.write("Correcto! Baby Yoda es el nombre dado por el internet por su parecido con el maestro Yoda")
-    
+
+
+with col2:
+  st.subheader("Guía")
+  modo = st.radio("¿Qué modalidad es la principal en tu interfaz?", ("Visual", "Auditiva", "Táctil"))
+  if modo == "Visual":
+    st.write("La vista es fundamental para tu interfaz")
+  if modo == "Auditiva":
+    st.write("La audición es fundamental para tu interfaz")
