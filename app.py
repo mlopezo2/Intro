@@ -12,3 +12,14 @@ texto = st.text_input("Capítulo 2, Temporada 1", "Baby Yoda, The Mandalorian")
 st.write("En la primera temporada descubrimos que el nombre real de Baby Yoda es Grogu."
 "Pertenece a la misma especie del icónico maestro Yoda, de quien no se ha podido definiren la mitología del mundo cual es el nombre de su especie o de qué planeta proviene.")
 
+st.subheader("Ahora usemos dos columnas.")
+
+col1, col2 = st.columns(2)
+
+with col1:
+  st.subheader("Cuestionario")
+  st.write("¿Cuál es el nombre real de Baby Yoda?")
+  resp = st.checkbox("Grogu")
+  if resp:
+    st.write("Correcto! Baby Yoda es el nombre dado por el internet por su parecido con el maestro Yoda")
+    
