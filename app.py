@@ -8,5 +8,5 @@ image = Image.open("babyyoda.jpg")
 
 st.image(image, caption="Baby Yoda")
 
-texto = st.text_input("Baby Yoda, The Mandalorian", "Capítulo 2, Temporada 1")
+texto = st.text_input("Capítulo 2, Temporada 1", "Baby Yoda, The Mandalorian")
 st.write("En la primera temporada descubrimos que el nombre real de Baby Yoda es Grogu.")
